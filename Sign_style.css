@@ -1,9 +1,11 @@
 * {
   padding: 0%;
+
   margin: 0%;
 }
 body {
   font-family: "Roboto", sans-serif;
+  padding: 7px;
 }
 
 .logo img {
@@ -19,10 +21,10 @@ body {
   height: 500px;
 }
 
-.container .image_conatainer {
-  width: 40%;
-  background: url(images/image.jpg);
-  background-size: cover;
+.container .image_conatainer img {
+  width: 270px;
+  height: 500px;
+
 }
 
 .sign-name h1 {
@@ -33,7 +35,7 @@ margin: 30PX 0;
 }
 
 .container .sign_container {
-  width: 60%;
+  width: 430px;
 }
 
 .last_grid {
@@ -191,10 +193,16 @@ font-weight: 600PX;
 }
 @media (max-width: 700px) {
 
-  .logo img {
-    width: 30%;
-    margin-left: 150px;
-  }
+  .logo{
+		display: flex;
+		justify-content: center;
+		text-align: center;
+		width: 100%;
+	}
+	.logo img{
+		width: 30%;
+		margin: 20px;
+	}
   .container {
     display: flex;
     justify-content: center;
